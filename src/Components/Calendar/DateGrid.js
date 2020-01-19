@@ -21,10 +21,9 @@ const Calendar = ({year, month}) => {
     return 32 - date;
   }
 
-  const getFirstMonday= (year, month) => {
+  const getFirstMonday = (year, month) => {
     let day = new Date(year, month, 1);
-    day = moment(day);
-    if(!(moment(day).format('dddd')==='Monday')) {
+    if(!(day.getDay === 1)) {
       day = new Date(year, (month-1), 1);
       day = moment(day).endOf('month').startOf('isoweek');
     }

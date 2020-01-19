@@ -31,6 +31,7 @@ const StyledCalendar = styled.div`
 const StyledButton = styled.button`
   margin: 3px;
   padding: 10px;
+  font-size: 1rem;
   background-color: #293669;
   color: white;
   border: none;
